@@ -55,14 +55,15 @@ def verse1():
 
 def verse2():
     pLine('You want your freedom?')
-    pLine('Take it')
+    pLine('Take it', 0.1)
     sleep(1)
     pLine('That\'s what I\'m counting on')
     print('')
     sleep(1)
-    pLine('I used to want you dead')
+    pLine('I used to want you dead', 0.1)
     pLine('but')
-    pLine('Now I only want you gone')
+    sleep(1)
+    pLine('Now I only want you gone', 0.1)
 
     sleep(4)
     system('cls')
