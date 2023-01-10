@@ -116,16 +116,16 @@ def verse6():
     pLine('disaster', 0.2)
     sleep(1)
     pLine('That\'s what I\'m counting on')
-    sleep(1)
+    sleep(1.5)
     pLine('You\'re someone else\'s problem', 0.1, True, 0)
-    pLine('Now I only want you gone')
-    pLine('Now I only want you gone')
+    pLine('Now I only want you gone', 0.1, True, 2.5)
+    pLine('Now I only want you gone', 0.1, True, 2.5)
     pLine('Now I only want you')
 
 def end():
     for _ in range(5):
         print('')
-    pLine('gone', 0.5)
+    pLine('gone', 0.5, False)
 
 # Main code
 def playSongWYG():
@@ -162,6 +162,7 @@ def playSongWYG():
     verse5()
 
     verse6()
+    system('cls')
     end()
-    sleep(1)
+    sleep(2)
     system('cls')

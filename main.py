@@ -2,7 +2,7 @@
 from stillAlive import playSongSA
 from wantYouGone import playSongWYG
 from time import sleep
-from os import system
+from os import system, sys
 
 # Get the song the user wants by asking them
 while True:
@@ -32,6 +32,6 @@ while True:
     if endProgram.upper() == 'Y':
         print('Goodbye')
         sleep(1)
-        system('cls')
+        sys.exit()
     else:
         print('Alright then,')
