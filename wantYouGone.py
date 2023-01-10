@@ -59,10 +59,9 @@ def verse2():
     sleep(1)
     pLine('That\'s what I\'m counting on')
     print('')
-    sleep(1)
+    sleep(2)
     pLine('I used to want you dead', 0.1)
     pLine('but')
-    sleep(1)
     pLine('Now I only want you gone', 0.1)
 
     sleep(4)
