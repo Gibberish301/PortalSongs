@@ -211,7 +211,7 @@ def playSongSA():
     stillAlive.play()
 
     # Wait for song to start
-    sleep(3)    
+    sleep(2.5)    
 
     # Begin typing out the lines of the songs
 
