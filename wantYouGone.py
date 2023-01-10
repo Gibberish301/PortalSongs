@@ -90,6 +90,7 @@ def verse4():
     pLine('That\'s what I\'m counting on')
     sleep(1)
     pLine('I\'ll let you get right to it')
+    sleep(0.5)
     pLine('Now I only want you gone')
 
     sleep(4)
@@ -97,14 +98,15 @@ def verse4():
 
 def verse5():
     pLine('Goodbye my only friend')
-    pLine('Oh, did you think I meant you?', 0.08)
+    sleep(0.5)
+    pLine('Oh, did you think I meant you?', 0.06)
     pLine('That would be funny', 0.08)
     pLine('if it weren\'t ', 0.08, False)
-    pLine('so sad', 0.2)
+    pLine('so sad', 0.1)
     pLine('Well you have been replaced')
     pLine('I dont\'t need anyone now')
     pLine('When I delete you maybe')
-    pLine('[REDACTED]', 0.5)
+    pLine('[REDACTED]', 0.2)
 
     sleep(0.5)
     system('cls')
@@ -156,6 +158,7 @@ def playSongWYG():
     top2()
     verse4()
 
+    sleep(1.5)
     verse5()
 
     verse6()
