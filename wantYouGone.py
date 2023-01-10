@@ -72,6 +72,7 @@ def verse3():
     pLine('(Maybe not quite as heavy)')
     pLine('Now little Caroline ', 0.08, False)
     pLine('is in here too')
+    sleep(1)
     pLine('One day they woke me up')
     pLine('So I could live forever')
     pLine('It\'s such a shame the same')
@@ -138,10 +139,10 @@ def playSongWYG():
 
     # Wait for song to start
     wantYouGone.play()
+    sleep(0.5)
     
-    # Make top part and wait for song to start
+    # Make top part
     top1()
-    sleep(1.5)
 
     # Start verses
 
