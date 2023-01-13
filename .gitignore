@@ -1,6 +1,2 @@
-*.pyc
-*.pyo
-__pycache__/
 pip-log.txt
 pip-delete-this-directory.txt
-Portal Songs.exe
