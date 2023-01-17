@@ -1,18 +1,8 @@
 # Import functions from libraries/modules/whatever else because I dont know
 from time import sleep
 from termcolor import colored
-from os import system, path, sys
-from vlc import MediaPlayer
-
-def resource_path(relative_path):
-    """ Get absolute path to resource, works for dev and for PyInstaller """
-    try:
-        # PyInstaller creates a temp folder and stores path in _MEIPASS
-        base_path = sys._MEIPASS
-    except Exception:
-        base_path = path.abspath(".")
-
-    return path.join(base_path, relative_path)
+from os import system
+from playSongs import playSong
 
 # Print things letter by letter instead of a whole sentence function
 def pLine(string, waitTime = 0.08, newLine = True, afterWaitTime = 0.5):
@@ -133,14 +123,8 @@ def playSongWYG():
     # Clear terminal
     system('cls')
 
-    # Get user's directory
-    directory = resource_path('.')
-
-    # Use directory to get song for VLC
-    wantYouGone = MediaPlayer(f'{directory}/WantYouGone.mp3')
-
-    # Wait for song to start
-    wantYouGone.play()
+    # Play song and wait
+    playSong(2)
     sleep(0.5)
     
     # Make top part

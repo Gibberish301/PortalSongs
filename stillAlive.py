@@ -1,18 +1,8 @@
 # Import functions from libraries/modules/whatever else because I dont know
 from time import sleep
 from termcolor import colored
-from os import system, path, sys
-from vlc import MediaPlayer
-
-def resource_path(relative_path):
-    """ Get absolute path to resource, works for dev and for PyInstaller """
-    try:
-        # PyInstaller creates a temp folder and stores path in _MEIPASS
-        base_path = sys._MEIPASS
-    except Exception:
-        base_path = path.abspath(".")
-
-    return path.join(base_path, relative_path)
+from os import system
+from playSongs import playSong
 
 # Print things letter by letter instead of a whole sentence function
 def pLine(string, waitTime = 0.06, newLine = True):
@@ -201,14 +191,8 @@ def playSongSA():
     system('cls')
     top1()
 
-    # Get user's directory
-    directory = resource_path('.')
-
-    # Use directory to get song for VLC
-    stillAlive = MediaPlayer(f'{directory}/StillAlive.mp3')
-        
-    # Play song earlier to accomodate for starting late
-    stillAlive.play()
+    # Play song
+    playSong(1)
 
     # Wait for song to start
     sleep(2.5)    
